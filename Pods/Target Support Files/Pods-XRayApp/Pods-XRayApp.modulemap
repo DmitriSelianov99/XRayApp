@@ -1,0 +1,6 @@
+framework module Pods_XRayApp {
+  umbrella header "Pods-XRayApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -36,7 +36,11 @@
 		34B679232B63B5310083623F /* PatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B679222B63B5310083623F /* PatientModel.swift */; };
 		34B679252B63C6F40083623F /* Date + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B679242B63C6F40083623F /* Date + Extensions.swift */; };
 		34BC30802B738CCD001EB68C /* UserDefaultsSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BC307F2B738CCD001EB68C /* UserDefaultsSetting.swift */; };
+		34C179A32B91DD8800B58222 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34C179A22B91DD8800B58222 /* GoogleService-Info.plist */; };
+		34C179A52B91E11700B58222 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C179A42B91E11700B58222 /* AlertView.swift */; };
+		34C179A72B91E99D00B58222 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C179A62B91E99D00B58222 /* TestViewController.swift */; };
 		34C21BBF2B74D3AE00DAAD69 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C21BBE2B74D3AE00DAAD69 /* SettingsViewController.swift */; };
+		38A6CC7B436B4AB6F728C192 /* Pods_XRayApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDFCE2DC96B9F014F861EE1 /* Pods_XRayApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,7 +74,13 @@
 		34B679222B63B5310083623F /* PatientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientModel.swift; sourceTree = "<group>"; };
 		34B679242B63C6F40083623F /* Date + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extensions.swift"; sourceTree = "<group>"; };
 		34BC307F2B738CCD001EB68C /* UserDefaultsSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsSetting.swift; sourceTree = "<group>"; };
+		34C179A22B91DD8800B58222 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		34C179A42B91E11700B58222 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		34C179A62B91E99D00B58222 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		34C21BBE2B74D3AE00DAAD69 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3E3DBF08BBDA5EB9C296395D /* Pods-XRayApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRayApp.debug.xcconfig"; path = "Target Support Files/Pods-XRayApp/Pods-XRayApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5CDFCE2DC96B9F014F861EE1 /* Pods_XRayApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XRayApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CE75AB6C9638198DC79788 /* Pods-XRayApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRayApp.release.xcconfig"; path = "Target Support Files/Pods-XRayApp/Pods-XRayApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 			files = (
 				34B679202B63B4840083623F /* RealmSwift in Frameworks */,
 				34B6791E2B63B4840083623F /* Realm in Frameworks */,
+				38A6CC7B436B4AB6F728C192 /* Pods_XRayApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +102,7 @@
 			children = (
 				34208BAE2B62BA2F000D2472 /* Views */,
 				34208BA32B62B1FC000D2472 /* MainViewController.swift */,
+				34C179A62B91E99D00B58222 /* TestViewController.swift */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -118,6 +130,8 @@
 			children = (
 				343F1BDE2B5BD2CD0021FE78 /* XRayApp */,
 				343F1BDD2B5BD2CD0021FE78 /* Products */,
+				8A9F05A54DFCE83C3BAF40ED /* Pods */,
+				895C27B1AE5E518DAA512EB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +146,7 @@
 		343F1BDE2B5BD2CD0021FE78 /* XRayApp */ = {
 			isa = PBXGroup;
 			children = (
+				34C179A22B91DD8800B58222 /* GoogleService-Info.plist */,
 				343F1BF32B5BD3720021FE78 /* Application */,
 				3458CCB42B69075E00FA86D9 /* NavigationModule */,
 				346E40C02B7242CF0089C37A /* LoginModule */,
@@ -206,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				346E40C22B7244DC0089C37A /* LoginViewController.swift */,
+				34C179A42B91E11700B58222 /* AlertView.swift */,
 			);
 			path = LoginModule;
 			sourceTree = "<group>";
@@ -259,6 +275,23 @@
 			path = SettingsModule;
 			sourceTree = "<group>";
 		};
+		895C27B1AE5E518DAA512EB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CDFCE2DC96B9F014F861EE1 /* Pods_XRayApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A9F05A54DFCE83C3BAF40ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E3DBF08BBDA5EB9C296395D /* Pods-XRayApp.debug.xcconfig */,
+				D4CE75AB6C9638198DC79788 /* Pods-XRayApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -266,9 +299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 343F1BF02B5BD2CF0021FE78 /* Build configuration list for PBXNativeTarget "XRayApp" */;
 			buildPhases = (
+				E8C1E1E5079231662C1855CE /* [CP] Check Pods Manifest.lock */,
 				343F1BD82B5BD2CD0021FE78 /* Sources */,
 				343F1BD92B5BD2CD0021FE78 /* Frameworks */,
 				343F1BDA2B5BD2CD0021FE78 /* Resources */,
+				D24D003FCEE00D62A0DB35DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,12 +361,55 @@
 			files = (
 				343F1BEC2B5BD2CF0021FE78 /* LaunchScreen.storyboard in Resources */,
 				343F1BE92B5BD2CF0021FE78 /* Assets.xcassets in Resources */,
+				34C179A32B91DD8800B58222 /* GoogleService-Info.plist in Resources */,
 				34208BAB2B62B743000D2472 /* Roboto-Bold.ttf in Resources */,
 				34208BAA2B62B743000D2472 /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D24D003FCEE00D62A0DB35DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XRayApp/Pods-XRayApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XRayApp/Pods-XRayApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XRayApp/Pods-XRayApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8C1E1E5079231662C1855CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XRayApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		343F1BD82B5BD2CD0021FE78 /* Sources */ = {
@@ -356,11 +434,13 @@
 				34208BA62B62B3D4000D2472 /* UIColor + Extensions.swift in Sources */,
 				3491B0C22B6166720015B973 /* UIViewContoller + Extensions.swift in Sources */,
 				344D819E2B6CF0D900AB2BC4 /* XrayViewController.swift in Sources */,
+				34C179A72B91E99D00B58222 /* TestViewController.swift in Sources */,
 				3411F41F2B6A46AC0026C20A /* UILabel + Extensions.swift in Sources */,
 				34208BB22B62BBAD000D2472 /* PatientsCollectionViewCell.swift in Sources */,
 				34208BB02B62BA73000D2472 /* PatientsCollectionView.swift in Sources */,
 				34B679182B63918F0083623F /* CardView.swift in Sources */,
 				34208BA42B62B1FC000D2472 /* MainViewController.swift in Sources */,
+				34C179A52B91E11700B58222 /* AlertView.swift in Sources */,
 				34C21BBF2B74D3AE00DAAD69 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +496,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -479,7 +559,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -500,6 +580,7 @@
 		};
 		343F1BF12B5BD2CF0021FE78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E3DBF08BBDA5EB9C296395D /* Pods-XRayApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -533,6 +614,7 @@
 		};
 		343F1BF22B5BD2CF0021FE78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4CE75AB6C9638198DC79788 /* Pods-XRayApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

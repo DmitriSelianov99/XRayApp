@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -20,7 +21,7 @@ class LoginViewController: UIViewController {
         btn.tintColor = .white
         btn.layer.cornerRadius = 12
         btn.backgroundColor = .specialBlue
-        btn.addTarget(self, action: #selector(enterTheApp), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(signInTapped), for: .touchUpInside)
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
     }()
@@ -33,6 +34,10 @@ class LoginViewController: UIViewController {
 //MARK: - CONFIG FUNCTIONS
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loginTextfield.autocapitalizationType = .none
+        passwordTextField.autocapitalizationType = .none
+        
         setupViews()
         setConstraints()
         
@@ -53,6 +58,26 @@ class LoginViewController: UIViewController {
     }
     
 //MARK: - objc
+    @objc private func signInTapped() {
+        guard let email = loginTextfield.text, !email.isEmpty,
+              let password = passwordTextField.text, !password.isEmpty
+        else { return }
+        
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
+            guard let self = self else { return }
+            
+            guard error == nil else {
+                AlertView.shared.addAlertController(in: self)
+                return
+            }
+            
+            let mainVC = TestViewController()
+            mainVC.modalPresentationStyle = .overFullScreen
+            present(mainVC, animated: true)
+        }
+    }
+    
+    
     @objc private func enterTheApp() {
         //let userId = UserDefaults.standard.string(forKey: "userId")
         //let isAuthorised = UserDefaults.standard.bool(forKey: "isUserAuthorised")
@@ -80,7 +105,6 @@ class LoginViewController: UIViewController {
         }
         
         simpleAlert(title: "Ошибка!", message: "Неверный логин или пароль")
-        
     }
     
 }

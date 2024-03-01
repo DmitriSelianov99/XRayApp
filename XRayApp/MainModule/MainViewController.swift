@@ -23,7 +23,8 @@ class MainViewController: UIViewController {
         //patientsArray = array.map { $0 }
         
         let userDef = UserDefaults.standard.string(forKey: "userId")!
-        let predicateFilter = NSPredicate(format: "doctorId= %@", userDef)
+        let predicateFilter = NSPredicate(format: "doctorId= 65e1b13276405a078114b30a" )
+        //let predicateFilter = NSPredicate(format: "doctorId= %@", userDef)
         //let compound = NSCompoundPredicate(type: .or, subpredicates: [predicateFilter])
         
         var filteredArray = array.filter(predicateFilter)
