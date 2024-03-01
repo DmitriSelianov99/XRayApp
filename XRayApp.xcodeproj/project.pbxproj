@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3411F41D2B6A448E0026C20A /* UITextField + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411F41C2B6A448E0026C20A /* UITextField + Extensions.swift */; };
+		3411F41F2B6A46AC0026C20A /* UILabel + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411F41E2B6A46AC0026C20A /* UILabel + Extensions.swift */; };
+		34208BA42B62B1FC000D2472 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34208BA32B62B1FC000D2472 /* MainViewController.swift */; };
+		34208BA62B62B3D4000D2472 /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34208BA52B62B3D4000D2472 /* UIColor + Extensions.swift */; };
+		34208BAA2B62B743000D2472 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34208BA82B62B743000D2472 /* Roboto-Medium.ttf */; };
+		34208BAB2B62B743000D2472 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34208BA92B62B743000D2472 /* Roboto-Bold.ttf */; };
+		34208BAD2B62B7A5000D2472 /* UIFont + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34208BAC2B62B7A5000D2472 /* UIFont + Extensions.swift */; };
+		34208BB02B62BA73000D2472 /* PatientsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34208BAF2B62BA73000D2472 /* PatientsCollectionView.swift */; };
+		34208BB22B62BBAD000D2472 /* PatientsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34208BB12B62BBAD000D2472 /* PatientsCollectionViewCell.swift */; };
+		343F1BE02B5BD2CD0021FE78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F1BDF2B5BD2CD0021FE78 /* AppDelegate.swift */; };
+		343F1BE22B5BD2CD0021FE78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F1BE12B5BD2CD0021FE78 /* SceneDelegate.swift */; };
+		343F1BE42B5BD2CD0021FE78 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F1BE32B5BD2CD0021FE78 /* ScanViewController.swift */; };
+		343F1BE92B5BD2CF0021FE78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343F1BE82B5BD2CF0021FE78 /* Assets.xcassets */; };
+		343F1BEC2B5BD2CF0021FE78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343F1BEA2B5BD2CF0021FE78 /* LaunchScreen.storyboard */; };
+		344D819E2B6CF0D900AB2BC4 /* XrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D819D2B6CF0D900AB2BC4 /* XrayViewController.swift */; };
+		3458CCB32B68F2F600FA86D9 /* NewPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3458CCB22B68F2F600FA86D9 /* NewPatientViewController.swift */; };
+		3458CCB62B6907A100FA86D9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3458CCB52B6907A100FA86D9 /* TabBarController.swift */; };
+		346E40BF2B7240550089C37A /* DoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346E40BE2B7240550089C37A /* DoctorModel.swift */; };
+		346E40C32B7244DC0089C37A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346E40C22B7244DC0089C37A /* LoginViewController.swift */; };
+		3491B0C22B6166720015B973 /* UIViewContoller + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3491B0C12B6166720015B973 /* UIViewContoller + Extensions.swift */; };
+		34B679132B637F2F0083623F /* UIStackView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B679122B637F2F0083623F /* UIStackView + Extensions.swift */; };
+		34B679162B638D260083623F /* DetailedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B679152B638D260083623F /* DetailedInfoViewController.swift */; };
+		34B679182B63918F0083623F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B679172B63918F0083623F /* CardView.swift */; };
+		34B6791B2B63B4400083623F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6791A2B63B4400083623F /* RealmManager.swift */; };
+		34B6791E2B63B4840083623F /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 34B6791D2B63B4840083623F /* Realm */; };
+		34B679202B63B4840083623F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 34B6791F2B63B4840083623F /* RealmSwift */; };
+		34B679232B63B5310083623F /* PatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B679222B63B5310083623F /* PatientModel.swift */; };
+		34B679252B63C6F40083623F /* Date + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B679242B63C6F40083623F /* Date + Extensions.swift */; };
+		34BC30802B738CCD001EB68C /* UserDefaultsSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BC307F2B738CCD001EB68C /* UserDefaultsSetting.swift */; };
+		34C21BBF2B74D3AE00DAAD69 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C21BBE2B74D3AE00DAAD69 /* SettingsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3411F41C2B6A448E0026C20A /* UITextField + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Extensions.swift"; sourceTree = "<group>"; };
+		3411F41E2B6A46AC0026C20A /* UILabel + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extensions.swift"; sourceTree = "<group>"; };
+		34208BA32B62B1FC000D2472 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		34208BA52B62B3D4000D2472 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
+		34208BA82B62B743000D2472 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		34208BA92B62B743000D2472 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		34208BAC2B62B7A5000D2472 /* UIFont + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extensions.swift"; sourceTree = "<group>"; };
+		34208BAF2B62BA73000D2472 /* PatientsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsCollectionView.swift; sourceTree = "<group>"; };
+		34208BB12B62BBAD000D2472 /* PatientsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsCollectionViewCell.swift; sourceTree = "<group>"; };
+		343F1BDC2B5BD2CD0021FE78 /* XRayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XRayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		343F1BDF2B5BD2CD0021FE78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		343F1BE12B5BD2CD0021FE78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		343F1BE32B5BD2CD0021FE78 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		343F1BE82B5BD2CF0021FE78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		343F1BEB2B5BD2CF0021FE78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		343F1BED2B5BD2CF0021FE78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344D819D2B6CF0D900AB2BC4 /* XrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XrayViewController.swift; sourceTree = "<group>"; };
+		3458CCB22B68F2F600FA86D9 /* NewPatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPatientViewController.swift; sourceTree = "<group>"; };
+		3458CCB52B6907A100FA86D9 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		346E40BE2B7240550089C37A /* DoctorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorModel.swift; sourceTree = "<group>"; };
+		346E40C12B7243560089C37A /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
+		346E40C22B7244DC0089C37A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3491B0C12B6166720015B973 /* UIViewContoller + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewContoller + Extensions.swift"; sourceTree = "<group>"; };
+		34B679122B637F2F0083623F /* UIStackView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extensions.swift"; sourceTree = "<group>"; };
+		34B679152B638D260083623F /* DetailedInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedInfoViewController.swift; sourceTree = "<group>"; };
+		34B679172B63918F0083623F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		34B6791A2B63B4400083623F /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		34B679222B63B5310083623F /* PatientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientModel.swift; sourceTree = "<group>"; };
+		34B679242B63C6F40083623F /* Date + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extensions.swift"; sourceTree = "<group>"; };
+		34BC307F2B738CCD001EB68C /* UserDefaultsSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsSetting.swift; sourceTree = "<group>"; };
+		34C21BBE2B74D3AE00DAAD69 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		343F1BD92B5BD2CD0021FE78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B679202B63B4840083623F /* RealmSwift in Frameworks */,
+				34B6791E2B63B4840083623F /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34208BA22B62B1E2000D2472 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				34208BAE2B62BA2F000D2472 /* Views */,
+				34208BA32B62B1FC000D2472 /* MainViewController.swift */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		34208BA72B62B60F000D2472 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				34208BA92B62B743000D2472 /* Roboto-Bold.ttf */,
+				34208BA82B62B743000D2472 /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		34208BAE2B62BA2F000D2472 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34208BAF2B62BA73000D2472 /* PatientsCollectionView.swift */,
+				34208BB12B62BBAD000D2472 /* PatientsCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		343F1BD32B5BD2CD0021FE78 = {
+			isa = PBXGroup;
+			children = (
+				343F1BDE2B5BD2CD0021FE78 /* XRayApp */,
+				343F1BDD2B5BD2CD0021FE78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		343F1BDD2B5BD2CD0021FE78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				343F1BDC2B5BD2CD0021FE78 /* XRayApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		343F1BDE2B5BD2CD0021FE78 /* XRayApp */ = {
+			isa = PBXGroup;
+			children = (
+				343F1BF32B5BD3720021FE78 /* Application */,
+				3458CCB42B69075E00FA86D9 /* NavigationModule */,
+				346E40C02B7242CF0089C37A /* LoginModule */,
+				34208BA22B62B1E2000D2472 /* MainModule */,
+				3458CCB12B68F2CE00FA86D9 /* NewPatientModule */,
+				34B679142B638CF60083623F /* DetailedInfoModule */,
+				34C21BBD2B74D37F00DAAD69 /* SettingsModule */,
+				344D819C2B6CF0AB00AB2BC4 /* XrayModule */,
+				343F1BF52B5BD3AC0021FE78 /* ScanModule */,
+				34B679192B63B4180083623F /* Service */,
+				3491B0C02B6166030015B973 /* Extensions */,
+				343F1BF42B5BD3870021FE78 /* SupportingFiles */,
+			);
+			path = XRayApp;
+			sourceTree = "<group>";
+		};
+		343F1BF32B5BD3720021FE78 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				343F1BDF2B5BD2CD0021FE78 /* AppDelegate.swift */,
+				343F1BE12B5BD2CD0021FE78 /* SceneDelegate.swift */,
+				34BC307F2B738CCD001EB68C /* UserDefaultsSetting.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		343F1BF42B5BD3870021FE78 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				34208BA72B62B60F000D2472 /* Fonts */,
+				343F1BE82B5BD2CF0021FE78 /* Assets.xcassets */,
+				343F1BEA2B5BD2CF0021FE78 /* LaunchScreen.storyboard */,
+				343F1BED2B5BD2CF0021FE78 /* Info.plist */,
+				346E40C12B7243560089C37A /* TODO.md */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		343F1BF52B5BD3AC0021FE78 /* ScanModule */ = {
+			isa = PBXGroup;
+			children = (
+				343F1BE32B5BD2CD0021FE78 /* ScanViewController.swift */,
+			);
+			path = ScanModule;
+			sourceTree = "<group>";
+		};
+		344D819C2B6CF0AB00AB2BC4 /* XrayModule */ = {
+			isa = PBXGroup;
+			children = (
+				344D819D2B6CF0D900AB2BC4 /* XrayViewController.swift */,
+			);
+			path = XrayModule;
+			sourceTree = "<group>";
+		};
+		3458CCB12B68F2CE00FA86D9 /* NewPatientModule */ = {
+			isa = PBXGroup;
+			children = (
+				3458CCB22B68F2F600FA86D9 /* NewPatientViewController.swift */,
+			);
+			path = NewPatientModule;
+			sourceTree = "<group>";
+		};
+		3458CCB42B69075E00FA86D9 /* NavigationModule */ = {
+			isa = PBXGroup;
+			children = (
+				3458CCB52B6907A100FA86D9 /* TabBarController.swift */,
+			);
+			path = NavigationModule;
+			sourceTree = "<group>";
+		};
+		346E40C02B7242CF0089C37A /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				346E40C22B7244DC0089C37A /* LoginViewController.swift */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		3491B0C02B6166030015B973 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3491B0C12B6166720015B973 /* UIViewContoller + Extensions.swift */,
+				34208BA52B62B3D4000D2472 /* UIColor + Extensions.swift */,
+				34208BAC2B62B7A5000D2472 /* UIFont + Extensions.swift */,
+				34B679122B637F2F0083623F /* UIStackView + Extensions.swift */,
+				34B679242B63C6F40083623F /* Date + Extensions.swift */,
+				3411F41C2B6A448E0026C20A /* UITextField + Extensions.swift */,
+				3411F41E2B6A46AC0026C20A /* UILabel + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		34B679142B638CF60083623F /* DetailedInfoModule */ = {
+			isa = PBXGroup;
+			children = (
+				34B679152B638D260083623F /* DetailedInfoViewController.swift */,
+				34B679172B63918F0083623F /* CardView.swift */,
+			);
+			path = DetailedInfoModule;
+			sourceTree = "<group>";
+		};
+		34B679192B63B4180083623F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				34B679212B63B51E0083623F /* Models */,
+				34B6791A2B63B4400083623F /* RealmManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		34B679212B63B51E0083623F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34B679222B63B5310083623F /* PatientModel.swift */,
+				346E40BE2B7240550089C37A /* DoctorModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		34C21BBD2B74D37F00DAAD69 /* SettingsModule */ = {
+			isa = PBXGroup;
+			children = (
+				34C21BBE2B74D3AE00DAAD69 /* SettingsViewController.swift */,
+			);
+			path = SettingsModule;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		343F1BDB2B5BD2CD0021FE78 /* XRayApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 343F1BF02B5BD2CF0021FE78 /* Build configuration list for PBXNativeTarget "XRayApp" */;
+			buildPhases = (
+				343F1BD82B5BD2CD0021FE78 /* Sources */,
+				343F1BD92B5BD2CD0021FE78 /* Frameworks */,
+				343F1BDA2B5BD2CD0021FE78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XRayApp;
+			packageProductDependencies = (
+				34B6791D2B63B4840083623F /* Realm */,
+				34B6791F2B63B4840083623F /* RealmSwift */,
+			);
+			productName = XRayApp;
+			productReference = 343F1BDC2B5BD2CD0021FE78 /* XRayApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		343F1BD42B5BD2CD0021FE78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					343F1BDB2B5BD2CD0021FE78 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 343F1BD72B5BD2CD0021FE78 /* Build configuration list for PBXProject "XRayApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 343F1BD32B5BD2CD0021FE78;
+			packageReferences = (
+				34B6791C2B63B4840083623F /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 343F1BDD2B5BD2CD0021FE78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				343F1BDB2B5BD2CD0021FE78 /* XRayApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		343F1BDA2B5BD2CD0021FE78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343F1BEC2B5BD2CF0021FE78 /* LaunchScreen.storyboard in Resources */,
+				343F1BE92B5BD2CF0021FE78 /* Assets.xcassets in Resources */,
+				34208BAB2B62B743000D2472 /* Roboto-Bold.ttf in Resources */,
+				34208BAA2B62B743000D2472 /* Roboto-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		343F1BD82B5BD2CD0021FE78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B6791B2B63B4400083623F /* RealmManager.swift in Sources */,
+				34B679252B63C6F40083623F /* Date + Extensions.swift in Sources */,
+				343F1BE42B5BD2CD0021FE78 /* ScanViewController.swift in Sources */,
+				34208BAD2B62B7A5000D2472 /* UIFont + Extensions.swift in Sources */,
+				34B679232B63B5310083623F /* PatientModel.swift in Sources */,
+				34B679162B638D260083623F /* DetailedInfoViewController.swift in Sources */,
+				3458CCB62B6907A100FA86D9 /* TabBarController.swift in Sources */,
+				343F1BE02B5BD2CD0021FE78 /* AppDelegate.swift in Sources */,
+				346E40BF2B7240550089C37A /* DoctorModel.swift in Sources */,
+				3458CCB32B68F2F600FA86D9 /* NewPatientViewController.swift in Sources */,
+				346E40C32B7244DC0089C37A /* LoginViewController.swift in Sources */,
+				3411F41D2B6A448E0026C20A /* UITextField + Extensions.swift in Sources */,
+				34BC30802B738CCD001EB68C /* UserDefaultsSetting.swift in Sources */,
+				34B679132B637F2F0083623F /* UIStackView + Extensions.swift in Sources */,
+				343F1BE22B5BD2CD0021FE78 /* SceneDelegate.swift in Sources */,
+				34208BA62B62B3D4000D2472 /* UIColor + Extensions.swift in Sources */,
+				3491B0C22B6166720015B973 /* UIViewContoller + Extensions.swift in Sources */,
+				344D819E2B6CF0D900AB2BC4 /* XrayViewController.swift in Sources */,
+				3411F41F2B6A46AC0026C20A /* UILabel + Extensions.swift in Sources */,
+				34208BB22B62BBAD000D2472 /* PatientsCollectionViewCell.swift in Sources */,
+				34208BB02B62BA73000D2472 /* PatientsCollectionView.swift in Sources */,
+				34B679182B63918F0083623F /* CardView.swift in Sources */,
+				34208BA42B62B1FC000D2472 /* MainViewController.swift in Sources */,
+				34C21BBF2B74D3AE00DAAD69 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		343F1BEA2B5BD2CF0021FE78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				343F1BEB2B5BD2CF0021FE78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		343F1BEE2B5BD2CF0021FE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		343F1BEF2B5BD2CF0021FE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		343F1BF12B5BD2CF0021FE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NG3V567GS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XRayApp/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) need it";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitri.XRayApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		343F1BF22B5BD2CF0021FE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NG3V567GS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XRayApp/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) need it";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitri.XRayApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		343F1BD72B5BD2CD0021FE78 /* Build configuration list for PBXProject "XRayApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343F1BEE2B5BD2CF0021FE78 /* Debug */,
+				343F1BEF2B5BD2CF0021FE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		343F1BF02B5BD2CF0021FE78 /* Build configuration list for PBXNativeTarget "XRayApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343F1BF12B5BD2CF0021FE78 /* Debug */,
+				343F1BF22B5BD2CF0021FE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		34B6791C2B63B4840083623F /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		34B6791D2B63B4840083623F /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34B6791C2B63B4840083623F /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		34B6791F2B63B4840083623F /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34B6791C2B63B4840083623F /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 343F1BD42B5BD2CD0021FE78 /* Project object */;
+}
