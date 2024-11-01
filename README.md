@@ -4,4 +4,4 @@
 ### Данное приложение является частью моей магистерской диссертации
 ### This application is part of my Master's thesis
 
-###_#UIKit_
+_#UIKit_
